@@ -1,9 +1,9 @@
 
 
 var gulp = require('gulp'),
-    browserify = require('browserify'),
-    connect = require('gulp-connect')
-    source = require('vinyl-source-stream');
+  browserify = require('browserify'),
+  connect = require('gulp-connect')
+  source = require('vinyl-source-stream');
 
 var config = {
   sourceFolder: './js/',
@@ -32,8 +32,8 @@ gulp.task('watch', function() {
 });
 
 gulp.task('html', function () {
-    gulp.src(config.destFolder + config.destFile)
-    .pipe(connect.reload());
+  gulp.src(config.destFolder + config.destFile)
+  .pipe(connect.reload());
 });
 
 gulp.task('connect', function() {
