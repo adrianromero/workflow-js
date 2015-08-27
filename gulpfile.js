@@ -14,7 +14,7 @@ var config = {
   debug: true,
 };
 
-gulp.task('default', ['build']);
+gulp.task('default', ['.build']);
 gulp.task('.build', ['build.browserify'])
 gulp.task('.develop-start', ['develop.server', 'develop.watch']);
 gulp.task('.develop-stop', ['develop.serverclose']);
